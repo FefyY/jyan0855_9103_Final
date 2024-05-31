@@ -9,8 +9,8 @@ class Lizard {
 
   display() {
 
-    stroke(50, 80, 50); // Dark green color
-    fill(100, 200, 100); // Lighter green color
+    stroke(50, 80, 50);
+    fill(82, 56, 42); 
     strokeWeight(2);
     
     push();
@@ -33,19 +33,19 @@ class Lizard {
 
     // Draw the tail
     noFill();
-    stroke(80, 160, 80);
+    stroke(82, 56, 42);
     bezier(-20, 0, -40, 10, -50, -10, -60, 5);
 
     pop(); // Restore original state
   }
 
-  // Example update method to move the lizard
+  //update method to move the lizard
   update() {
     if (frameCount%120 == 0){
+      this.x += noise(this.offset)*20; 
+      this.y += noise(this.offset)*20*random(-1,1); 
       this.angle +=random(-30,30)
     }
-    this.x += noise(this.offset)*2; 
-    this.y += noise(this.offset)*3*random(-1,1); 
     if (this.x - 30 > width) {
       this.x = -30;}
     if (this.y - 30 > height) {

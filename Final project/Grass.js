@@ -1,6 +1,6 @@
 class Grass {
 
-  // position,number of Dots 
+  // position,number of grass 
   constructor(x, y,x1,y1) {
     this.x = x;
     this.y = y;
@@ -19,6 +19,7 @@ class Grass {
 
 
 }
+//control the growth of graas
   update() {
     this.x1 += random(-0.6,0.6)
     this.y1 += random(-0.6,0.6)

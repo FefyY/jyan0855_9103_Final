@@ -192,7 +192,7 @@ function draw() {
   lizard.display(); 
   //drawGrass();
 }
-// draw grass function
+// draw grass function now is class
 // function drawGrass() {
 //   for (let i = 0; i < grassNum; i++) {
 //     let blade = grass[i];
