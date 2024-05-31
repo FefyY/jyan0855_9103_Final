@@ -167,7 +167,7 @@ class Flower {
 }
     update(){
       this.scale += 0.000001
-      this.x += 0.5; // Horizontal drift
+      this.x += 0.3; // Horizontal drift
       if (this.x - 130 > width) {
         this.x = -130;
     }

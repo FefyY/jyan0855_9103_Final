@@ -1,6 +1,6 @@
 # jyan0855_9103_Final
-
- 1. The work I have done here is to based on the teamwork of the group, apply animation on the graph with factor of time.
+## How to interat
+1. The work I have done here is to based on the teamwork of the group, apply animation on the graph with factor of time.
 2. I divided my works into five parts: main,Flower, Grass, Dots and Lizard. Lizard and Grass did not excised in my previous tram work and all the parts were to some extend modified or updated. All these parts mentioned above were animated. The reason I added the lizard is a  I have watched about the desert. Although the desert often represents the death, the dangerous but the movements of plants and animals were also fascinating in these areas. That’s whyI decided to try to simulate the movements in the desert.
 3. To stimulate the movement, my initial idea was to create the felling of a windy environment. The first thing I have done is to let the dots, which represent the sand in the air, to move. This is done by implementing the update in dots and run the update every frame before the dots were drawn. 
 4. Then it’s to make the plants, Flower objects, to move. At the beginning, I kept the plants move with the sands but in a different speed since they are heavier. However, it is extremely odd to see that the leaves of the plants are not moving in the wind but the whole plant is moving. Then I figure out to use implement noise in the Flower class and variable moveX and moveY. By implementing these allowed each of the leave move naturally. Since our imaginary wind is blowing from left to right, I made the movement of y-axis moveY larger than moveX to create a sense of wind blowing on the leaves.
