@@ -159,7 +159,7 @@ function setup() {
   initialiseFlowers();
   initialiseDots();
   initialiseGrass();
-  lizard = new Lizard(200, 200, 1); 
+  lizard = new Lizard(50, height/2-20, 1); 
 
 }
 

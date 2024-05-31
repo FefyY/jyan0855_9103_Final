@@ -42,13 +42,15 @@ class Lizard {
   //update method to move the lizard
   update() {
     if (frameCount%120 == 0){
-      this.x += noise(this.offset)*20; 
-      this.y += noise(this.offset)*20*random(-1,1); 
       this.angle +=random(-30,30)
     }
+    if(colorB>20){
+      this.x += noise(this.offset)*5; 
+      this.y += noise(this.offset)*5*random(-1,1); 
     if (this.x - 30 > width) {
       this.x = -30;}
     if (this.y - 30 > height) {
       this.y = -30;}
   }
+}
 }
